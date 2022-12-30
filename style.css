@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.BarraSuperior{
+    background-color: rgb(81, 161, 222);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    display: flex;
+}
+.BarraSuperior img{
+    height: 80px;
+    padding: 10px 0px 10px 0px;
+    width: 200px;
+}
+.Textos{
+    color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    gap: 42px;
+    height: 40px;
+    padding: 10px 0 10px 230px;
+}
+.Ejemplo{
+    align-items: end;
+    background-image: url(./Imagenes/Cascada.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    width: 100%;
+}
+.Ejemplos{
+    color: white;
+    display: flex;
+    font-size: 35px;
+    padding: 0 0 120px 130px;
+    text-align: center;
+    text-shadow: 0.2em 0.1em black;
+    width: 40%;
+}
+.Texto{
+    color: rgb(125, 119, 121);
+    display: flex;
+    gap: 18px;
+    height: 20px;
+    padding: 50px 0 20px 75px;
+}
+.Titulos h1, h2, h3{
+    color: rgb(91, 91, 91);
+    height: auto;
+    margin-left: 75PX;
+    padding-top: 30px;
+}
+.galeria {
+    padding: 35px 15px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.Bloque1 {
+    padding: 3px 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+.Bloque1 img {
+    flex: 47.7%;
+    max-width: 47.7%;
+    padding: 0px 3px;
+    transition: all 0.3s ease;
+}
+.Bloque1 img:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0);
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+.Bloque2 {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+.Bloque2 img {
+    flex: 27%;
+    max-width: 27%;
+    padding: 0px 3px;
+    transition: all 0.3s ease;
+}
+.Bloque2 img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0);
+    transform: scale(1.1);
+}
+.Parrafo p{
+    color: rgb(91, 91, 91);
+    display: flex;
+    height: 15px;
+    justify-content: center;
+    padding: 20px 40px 50px 40px;
+}
+.Parrafo h2{
+    color: rgb(91, 91, 91);
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px 30px 40px;
+}
+.Contacto{
+    align-items:center;
+    background-image: url(./imagenes/Paisaje.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    font-size: 13px;
+    height: 400px;
+    justify-content: center;
+    text-shadow: 0.2em 0.1em black;
+    width: 100%;
+}
+.Ofertas{
+    text-align: center;
+    width: 50%;
+}
+.Comunicacion{
+    text-align: center;
+    width: 50%;
+}
+.WhatsApp{
+    display: flex;
+    justify-content: center;
+}
+.WhatsApp img{
+    height: 60px;
+    padding:15px 20px 0 0;
+    width: 60px;
+}
+.Botones{
+    background-color: rgb(140, 140, 140);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 30px;
+    width: 250px;
+}
+.BarraInferior{
+    background-color: rgb(27, 40, 49);
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+.Opciones{
+    color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    gap: 42px;
+    height: 40px;
+    padding: 25px 22px 0 250px;
+}
+.Línea p{
+    background-color: rgb(27, 40, 49);
+    color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+.Icono{
+    background-color: rgb(27, 40, 49);
+    display: flex;
+    padding: 0 0 30px 100px;
+}
+.Contactos{
+    color: rgba(255, 255, 255, 0.658);
+    display: flex;
+    gap: 50px;
+    height: 40px;
+    padding: 0 22px 0 235px;
+}
+.camp_trabajo{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+    visibility: hidden;
+}
+.carrucel{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.carrucel img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cerrar{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.boton {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+.boton:hover > i {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.retroceder{
+    left: 20px;
+}
+.avanzar{
+    right: 20px;
+}
+.mdi{
+    pointer-events: none;
+}
